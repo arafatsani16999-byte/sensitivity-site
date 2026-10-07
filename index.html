@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Sensitivity Guide - Best Settings for Gamers</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container nav">
+    <div class="logo">⚡ Sensi<span>Guide</span></div>
+    <nav>
+      <a href="#calculator">Calculator</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="badge">✅ 100% Safe — No Hack, No MOD</div>
+    <h1>Your Mobile Gaming<br><span class="accent">Experience, Optimized</span></h1>
+    <p class="subtitle">ডিভাইস অনুযায়ী পারফেক্ট সেনসিটিভিটি সেটিংস পান — মাত্র এক ক্লিকে</p>
+    <a href="#calculator" class="btn-primary">Get Sensitivity →</a>
+  </div>
+</section>
+
+<!-- Calculator -->
+<section id="calculator" class="calculator">
+  <div class="container">
+    <h2 class="section-title">🎯 Sensitivity Calculator</h2>
+    <p class="section-sub">আপনার ডিভাইসের তথ্য দিন, পারফেক্ট সেটিংস পান</p>
+
+    <div class="form-card">
+      <div class="form-group">
+        <label>ডিভাইস ব্র্যান্ড</label>
+        <select id="brand">
+          <option value="">-- ব্র্যান্ড নির্বাচন করুন --</option>
+          <option>Xiaomi</option>
+          <option>Realme</option>
+          <option>Samsung</option>
+          <option>Vivo</option>
+          <option>Oppo</option>
+          <option>Infinix</option>
+          <option>Tecno</option>
+          <option>OnePlus</option>
+          <option>iPhone</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>ডিভাইস মডেল</label>
+        <input type="text" id="model" placeholder="যেমন: Redmi Note 12">
+      </div>
+
+      <div class="form-group">
+        <label>RAM (GB)</label>
+        <select id="ram">
+          <option>3</option>
+          <option>4</option>
+          <option selected>6</option>
+          <option>8</option>
+          <option>12</option>
+          <option>16</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Screen Refresh Rate</label>
+        <select id="refresh">
+          <option>60</option>
+          <option selected>90</option>
+          <option>120</option>
+          <option>144</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Play Style</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="style" value="headshot" checked> 🎯 Headshot</label>
+          <label class="radio"><input type="radio" name="style" value="balanced"> ⚖️ Balanced</label>
+          <label class="radio"><input type="radio" name="style" value="sniper"> 🔭 Sniper</label>
+          <label class="radio"><input type="radio" name="style" value="rusher"> ⚡ Rusher</label>
+        </div>
+      </div>
+
+      <button class="btn-primary full" onclick="calculateSensitivity()">🚀 Calculate Now</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result" class="result hidden">
+      <h3>আপনার সেনসিটিভিটি সেটিংস</h3>
+      <div class="result-grid" id="resultGrid"></div>
+      <p class="note">* এই ভ্যালুগুলো ইন-গেম সেটিংসে ম্যানুয়ালি বসান। কোনো ফাইল মডিফাই করা হয় না।</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="features">
+  <div class="container">
+    <h2 class="section-title">✨ Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card"><div class="icon">🎯</div><h4>Auto Sensitivity</h4><p>ডিভাইস বেসড</p></div>
+      <div class="feature-card"><div class="icon">⚙️</div><h4>Extra Settings</h4><p>FPS • Touch • Perf</p></div>
+      <div class="feature-card"><div class="icon">💎</div><h4>Diamond Top Up</h4><p>Fast & Easy</p></div>
+      <div class="feature-card"><div class="icon">🎧</div><h4>Gadget Shop</h4><p>Headset • Cooler</p></div>
+      <div class="feature-card"><div class="icon">📹</div><h4>Tutorials</h4><p>Video Guides</p></div>
+      <div class="feature-card"><div class="icon">🛡️</div><h4>Safe Config</h4><p>No Hack • No MOD</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 class="section-title">❓ FAQ</h2>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">এটি কি কোনো হ্যাক?</div>
+      <div class="faq-a">না। এটি শুধু ইন-গেম সেনসিটিভিটি ভ্যালু সাজেস্ট করে। কোনো গেম ফাইল মডিফাই করা হয় না।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">ব্যবহার করা কি নিরাপদ?</div>
+      <div class="faq-a">হ্যাঁ, ১০০% নিরাপদ। শুধু সেটিংস সাজেশন, কোনো স্ক্রিপ্ট বা MOD নয়।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">সেনসিটিভিটি কাজ না করলে?</div>
+      <div class="faq-a">আপনার প্লে স্টাইল পরিবর্তন করে আবার চেষ্টা করুন, অথবা ভ্যালু কাছাকাছি রেঞ্জে অ্যাডজাস্ট করুন।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">এটা কি অফিসিয়াল অ্যাপ?</div>
+      <div class="faq-a">না। এটি কোনো গেম পাবলিশারের অফিসিয়াল অ্যাপ নয়।</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p class="disclaimer">
+      ⚠️ <strong>Disclaimer:</strong> This is not an official app of any game publisher. 
+      All game names and trademarks are property of their respective owners. 
+      No Hack, No MOD, No Script, No Game File Modification.
+    </p>
+    <p class="copyright">© 2025 SensiGuide — Made for Gamers</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
